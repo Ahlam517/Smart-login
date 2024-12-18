@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <title>Smart Login System</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+  <div class="container">
+    <div class="login-box">
+      <h2 class="title">Smart Login System</h2>
+      <form>
+        <div class="input-box">
+          <input type="text" placeholder="Your Name" required
+          name=""
+          id="nameSignUp"
+          >
+          <i class="fa fa-user"></i>
+        </div>
+        <div class="alert alert-danger d-none ">
+            <small>
+                This is not a valid name
+            </small>
+        </div>
+
+        <div class="input-box">
+          <input type="email" placeholder="Your Email" required
+          name=""
+          id="mailSignUp"
+          >
+          <i class="fa fa-envelope"></i>
+        </div>
+        <div class="alert alert-danger d-none ">
+            <small>
+                This is not a valid email
+            </small>
+        </div>
+
+        <div class="input-box">
+          <input type="password" placeholder="Enter password" required
+          name=""
+          id="passSignUp"
+          >
+          <i class="fa fa-lock"></i>
+        </div>
+        <div class="alert alert-danger d-none ">
+            <small>
+                This is not a valid pass
+            </small>
+        </div>
+
+        <button id="btnSignUp" type="submit" class="btn">Sign Up</button>
+      </form>
+      <p class="signin-link">You have an account? <a href="#">Signin</a></p>
+    </div>
+  </div>
+
+
+
+  
+  <script src="./js/main.js"></script>
+  <script src="./js/all.min.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
