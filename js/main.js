@@ -136,12 +136,13 @@ btnLogin?.addEventListener('click' , (e)=>{
                 icon: 'success',
                 confirmButtonText: 'Ok',
                 timer: 2000,
-                timerProgressBar: true,
-                didClose: () => {
-                    window.location.replace('../home.html');
-                },
+
             });
+                setTimeout(()=>{
+                    window.location.href='../home.html'
+                },2000)
             
+
             userFound=true
             break;
         }        
@@ -162,7 +163,7 @@ let userName = localStorage.getItem('loginUser')
 
 
 function welcome(){
-    document.getElementById('hi').innerHTML='welcome ' + userName
+    document.getElementById('welcome').innerHTML='welcome ' + userName
 }
 
 window.addEventListener('load' , welcome)
